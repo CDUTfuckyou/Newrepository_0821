@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColor">#FFFFFF</color>
+    <color name="bgColor">#000000</color>
+    <color name="border_line">#ffd7dadc</color>
+    <color name="black">#000000</color>
+    <color name="pink">#EE1289</color>
+    <color name="color_hei">#ff000000</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="color_cihei">#ff333333</color>
+    <color name="color_shenhui">#ff999999</color>
+    <color name="color_zhonghui">#ff798089</color>
+    <color name="color_qianhui">#ff888b8d</color>
+    <color name="color_zuiqianhui">#ffb4b4b4</color>
+    <color name="color_bai">#ffffffff</color>
+    <color name="color_bai_8">#ffffffff</color>
+    <color name="color_lan">#ff067bb1</color>
+    <color name="window_bg">#ffeef1f3</color>
+    <color name="title_bg">#ff54acea</color>
+    <color name="button_unselected">#ff54acea</color>
+    <color name="transparent">@color/color_hei_8</color>
+    <color name="chat_background">@color/window_bg</color>
+    <color name="chat_title_name">@color/color_bai</color>
+    <color name="traffic_bg">#ffe3e6e8</color>
+    <color name="traffic_txt">@color/color_hei</color>
+    <color name="traffic_data">@color/color_zhonghui</color>
+    <color name="chat_text">@color/color_cihei</color>
+    <color name="chat_time">@color/color_bai</color>
+    <color name="chat_history_time_text">@color/color_shenhui</color>
+    <color name="screenshot_normal">#3f000000</color>
+    <color name="screenshot_pressed">#bf000000</color>
+    <color name="recent_msg">@color/color_zhonghui</color>
+    <color name="search_text">#ff929292</color>
+    <color name="search_cancel_text">#ff0e0e0e</color>
+    <color name="doodle_bg">#fff2f3f5</color>
+    <color name="qq_normal">@color/color_hei</color>
+    <color name="video_bg_color">#ffecf3f9</color>
+    <color name="color_divider">#ffc9c9c9</color>
+    <color name="color_divider_for_contactlist_lower">#ffc2c8cd</color>
+    <color name="color_divider_for_trooplist">#ffc9c9c9</color>
+    <color name="color_divider_for_recentlist_upper">#ffadb4ba</color>
+    <color name="semi_transparent">#7f000000</color>
+    <color name="semi_transparent_w">#7fffffff</color>
+    <color name="sqqname">#ffee860a</color>
+    <color name="list_item_focus_for_troop">#ffe9eaeb</color>
+    <color name="list_item_focus_for_friendlist">#ffd3d7da</color>
+    <color name="list_contact_prompt_line">#ffc2c8cd</color>
+    <color name="thirty_transparent_black">#4d000000</color>
+    <color name="twenty_transparent_black">#33000000</color>
+    <color name="fifteen_trans_black">#26000000</color>
+    <color name="add_troop_member_bg">#ffdadfe2</color>
+    <color name="list_item_press">#fff2f4f5</color>
+    <color name="list_item_line">#ffc2c8cd</color>
+    <color name="contact_category_text">#ff454a52</color>
+    <color name="contact_category_text_focused">#ff4686b3</color>
+    <color name="sc_transparent_black">#7f000000</color>
+    <color name="sc_red">#ffff0000</color>
+    <color name="sc_chat_contact">#ffeeeeee</color>
+    <color name="sc_black">#ff000000</color>
+    <color name="sc_white">@color/color_bai_8</color>
+    <color name="sc_transparent">#00ffffff</color>
+    <color name="sc_gray">#ff777777</color>
+    <color name="sc_name">#ff5fc4ff</color>
+    <color name="sc_transparent_background">@color/color_hei_8</color>
+    <color name="sc_info_btn_press">#f043afd4</color>
+    <color name="text_drag_refresh_big">@color/color_shenhui</color>
+    <color name="tag_textview1">#ff795028</color>
+    <color name="tag_textview2">#ff4a7928</color>
+    <color name="tag_textview3">#ff284479</color>
+    <color name="setting_text1">@color/color_hei</color>
+    <color name="setting_text2">@color/color_zhonghui</color>
+    <color name="setting_bg">#ffe3e6e8</color>
+    <color name="no_auto_reply_normal">#ff636363</color>
+    <color name="no_auto_reply_press">#ffc6c6c6</color>
+    <color name="emo_item_sel">#ff1f2124</color>
+    <color name="feed_item_comment_press_background">#ffdddddd</color>
+    <color name="qzone_black">#ff000000</color>
+    <color name="qzone_white">#ffffffff</color>
+    <color name="qzone_transparent">#00ffffff</color>
+    <color name="transparentpercent">#e5000000</color>
+    <color name="lightgray">#ff555555</color>
+    <color name="button_reply_normal">#ffffffff</color>
+    <color name="button_reply_pressed">#fffff8d0</color>
+    <color name="qzone_myfeed_rztitle">#ff262626</color>
+    <color name="qzone_myfeed_title">#ff404040</color>
+    <color name="qzone_feed_content">#ff0e0e0e</color>
+    <color name="translucent_background">#5c000000</color>
+    <color name="text_nick_name">#ff333333</color>
+    <color name="text_comment">#ff6b6b6b</color>
+    <color name="shorttextColor">#ff8d8d8d</color>
+    <color name="qzone_shuoshuo_textcount_normal_color">#ff9a9999</color>
+    <color name="qzone_shuoshuo_textcount_exceed_color">#ffd90115</color>
+    <color name="feed_item_pressed">#ffeeeeee</color>
+    <color name="comment_nick_name">#ff000000</color>
+    <color name="feed_operation_text_color">#ff246183</color>
+    <color name="feed_item_assist_text_color">#ff979797</color>
+    <color name="feed_item_content_text_color">#ff333333</color>
+    <color name="feed_item_content_text_color_normal">#ff000000</color>
+    <color name="feed_image_background_color">#fff2f2f2</color>
+    <color name="feed_item_comment_background">#fff6f6f6</color>
+    <color name="myfeed_item_content_text_color">#ff333333</color>
+    <color name="myfeed_item_comment_text_color">#ff999999</color>
+    <color name="myfeed_item_more_comment_color">#ff067bb1</color>
+    <color name="myfeed_comment_color">#ff4a4a4a</color>
+    <color name="myfeed_item_praise_text">#ff424242</color>
+    <color name="feedcontenttextColor">#ff6a6a6a</color>
+    <color name="feed_item_time_text">#ff979797</color>
+    <color name="feed_item_commbutton_text">#ff525557</color>
+    <color name="feed_item_comm_text">#ff6a6a6a</color>
+    <color name="qzone_feed_comm_text_un">#ffacaeaf</color>
+    <color name="qzone_picviewer_loading_text">#fffefefe</color>
+    <color name="qzone_picviewer_loading_toload">#bf000000</color>
+    <color name="qzone_picviewer_loading_bg">#99000000</color>
+    <color name="qzone_picviewer_loading_loaded">#ffffffff</color>
+    <color name="qzone_picviewer_description">#ffe0e0e0</color>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <color name="red">#ffff0000</color>
+    <color name="orange">#ffe3432c</color>
+    <color name="path_black">#ff333333</color>
+    <color name="lighter_gray">#ffcccccc</color>
+    <color name="light_gray">#ffbbbbbb</color>
+    <color name="med_gray">#ff999999</color>
+    <color name="gray">#ff666666</color>
+    <color name="dark_gray">#ff4d4d4d</color>
+    <color name="beige">#fff1eee9</color>
+    <color name="light_light_gray">#ffdddddd</color>
+    <color name="overlay_bg">#7f000000</color>
+    <color name="menu_settings_header_text">#ffc9beaa</color>
+    <color name="activity_bg">#fffafafa</color>
+    <color name="feed_item_bg">#fff2eee8</color>
+    <color name="feed_item_track">#ffe8e4dd</color>
+    <color name="cover_track">#7fffffff</color>
+    <color name="feed_subtext">#ffaea9a1</color>
+    
+    <color name="bubble_item_divider">#fff7f6f5</color> 
+    <!-- <color name="bubble_item_divider">#DB7093</color>-->
+    
+    
+    <color name="cover_text_shadow">#7f000000</color>
+    <color name="cover_time_shadow">#7f000000</color>
+    <color name="qa_bar_text_shadow">#ff7f1a13</color>
+    <color name="page_subtext">#ffada9a0</color>
+    <color name="page_tab_text_pressed">#ffffffff</color>
+    <color name="page_tab_shadow_pressed">#ff827f79</color>
+    <color name="page_tab_text_released">#ffaea9a1</color>
+    <color name="page_tab_shadow_released">#ffffffff</color>
+    <color name="permalink_item_bg">#fff2f2f2</color>
+    <color name="permalink_comment_location_text">#ffa2afbd</color>
+    <color name="permalink_comment_send_text">#ff9fa2a6</color>
+    <color name="emotion_picker_deluxe_avatar_blank">#7f666666</color>
+    <color name="emotion_picker_deluxe_text">#ff757575</color>
+    <color name="nux_blue_shadow">#ff0b36b7</color>
+    <color name="line_on_paper">#ffe6e6e6</color>
+    <color name="clear">#00000000</color>
+    <color name="feed_comment_button_text">#ffaea9a1</color>
+    <color name="feed_comment_button_text_shadow">#fffcfbfa</color>
+    <color name="feed_comment_button_text_pressed">#fff3f1ed</color>
+    <color name="feed_comment_button_text_shadow_pressed">#ffbfb8b1</color>
+    <color name="moment_dot_default">#ffcbc5bc</color>
+    <color name="moment_dot_thought">#ffcbc5bc</color>
+    <color name="moment_dot_music">#ffee9920</color>
+    <color name="moment_dot_place">#ff2772ce</color>
+    <color name="moment_dot_people">#ffffffff</color>
+    <color name="moment_ambient_dot_joined">#ffdb3825</color>
+    <color name="moment_ambient_dot_distance">#ff756c60</color>
+    <color name="moment_ambient_dot_asleep">#ff49098a</color>
+    <color name="moment_ambient_dot_awake">#fff5d318</color>
+    <color name="moment_ambient_dot_friend">#ffcbc5bc</color>
+    <color name="moment_ambient_dot_cover">#ffcbc5bc</color>
+    <color name="sleep_dialog_background">#ff0f041b</color>
+    <color name="sleep_dialog_time">#ff675475</color>
+    <color name="sleep_duration_message">#ff462e59</color>
+</resources>
