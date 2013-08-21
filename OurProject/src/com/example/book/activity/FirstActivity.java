@@ -3,29 +3,34 @@ package com.example.book.activity;
 import xmu.software.acbuwa.R;
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class FirstActivity extends Activity{
+public class FirstActivity extends Activity {
 	
-	private TextView topbar_title;
-		
-	private LayoutInflater inflater;
+	private String TAG = "FirstActivity";
 	
-	private View topbar;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_first);
-		inflater = LayoutInflater.from(this);
-		topbar = inflater.inflate(R.layout.acbuwa_topbar, null);	
-		topbar_title = (TextView)topbar.findViewById(R.id.topbar_title);
-		topbar_title.setText("123");		
+		setContentView(R.layout.activity_first);	
+			
+		StartActivity.rightBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if(TabHostActivity.topbar_rightBtn_tag==0){
+					Log.d(TAG,"首页点击");
+				}
+				else if(TabHostActivity.topbar_rightBtn_tag==1){
+					Log.d(TAG, "我要买书点击");
+				}
+			}
+		});
 	}
 }

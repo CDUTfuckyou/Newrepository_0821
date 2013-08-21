@@ -18,23 +18,17 @@ import com.example.book.afinal.FinalHttp;
 
 
 public class RegisterActivity extends Activity implements OnClickListener{
-	private String TAG = "RegisterActivity";
-	
+	private String TAG = "RegisterActivity";	
 	private ImageButton register_ibtn_back;
 	private Button register_btn_login;
 	private Button register_btn_register;
-	private EditText register_et_username;
-	private EditText register_et_email;
-	private EditText register_et_password;
-	
-	private String phoneNumber,passWord,major;
-	
-	private Intent intent;
-	
-	private FinalHttp finalHttp;
-	
+	private EditText register_et_phoneNumber;
+	private EditText register_et_major;
+	private EditText register_et_password;	
+	private String phoneNumber,passWord,major;	
+	private Intent intent;	
+	private FinalHttp finalHttp;	
 	private final String SevirceUrl="http://192.168.1.105:8080/BookSell";
-	
 	private String uri;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +45,8 @@ public class RegisterActivity extends Activity implements OnClickListener{
 		register_ibtn_back = (ImageButton)this.findViewById(R.id.register_ibtn_back); 
 		register_btn_login = (Button)this.findViewById(R.id.register_btn_login);
 		register_btn_register = (Button)this.findViewById(R.id.register_btn_register);
-		register_et_username = (EditText)this.findViewById(R.id.register_et_username);
-		register_et_email = (EditText)this.findViewById(R.id.register_et_email);
+		register_et_phoneNumber = (EditText)this.findViewById(R.id.register_et_phoneNumber);
+		register_et_major = (EditText)this.findViewById(R.id.register_et_major);
 		register_et_password = (EditText)this.findViewById(R.id.register_et_password);
 		
 		register_ibtn_back.setOnClickListener(this);
@@ -66,12 +60,13 @@ public class RegisterActivity extends Activity implements OnClickListener{
 			this.finish();
 		}
 		else if(v.getId() == R.id.register_btn_login) {
-			
+			this.finish();
 		}
 		else if(v.getId() == R.id.register_btn_register) {
-			phoneNumber = register_et_username.getText().toString();		
-			major = register_et_email.getText().toString();
+			phoneNumber = register_et_phoneNumber.getText().toString();		
+			major = register_et_major.getText().toString();
 			passWord = register_et_password.getText().toString();
+			
 			AjaxParams params = new AjaxParams();
 			params.put("phone", phoneNumber);
 			params.put("password", passWord);
@@ -93,8 +88,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
 					Log.d(TAG, t.toString());
 					Log.d(TAG, major);
 				}				
-			});
-			
+			});			
 		}			
 	}
 }

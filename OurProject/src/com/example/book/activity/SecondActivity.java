@@ -2,15 +2,18 @@ package com.example.book.activity;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import xmu.software.acbuwa.R;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+
 import com.example.book.adapter.BuyBookAdapter;
 import com.example.book.adapter.ImageAdapter;
 import com.example.book.dao.GalleryFlow;
@@ -32,13 +35,13 @@ public class SecondActivity extends Activity implements OnItemClickListener{
 	
 	private GalleryFlow galleryFlow;
 	
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_second);
-		
+			
 		context = SecondActivity.this;
 
 		Integer[] images = { R.drawable.img0001, R.drawable.img0030,

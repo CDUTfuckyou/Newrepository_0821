@@ -77,62 +77,18 @@
                 android:src="@drawable/icon_user_name2x" />
 
             <EditText
-                android:id="@+id/register_et_username"
+                android:id="@+id/register_et_phoneNumber"
                 android:layout_width="0dip"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="6dp"
                 android:layout_weight="1"
                 android:background="#00000000"
-                android:hint="请输入用户名"
+                android:hint="请输入您的手机号"
                 android:textSize="16sp" />
 
             <ImageView
-                android:id="@+id/register_iv_username_yes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/register_yes" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/divider_horizontal_line"
-            android:orientation="vertical" >
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:orientation="horizontal"
-            android:paddingBottom="5dp" >
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:background="#00000000"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:src="@drawable/icon_email2x" />
-
-            <EditText
-                android:id="@+id/register_et_email"
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="6dp"
-                android:layout_weight="1"
-                android:background="#00000000"
-                android:inputType="textEmailAddress"
-                android:hint="请输入邮箱地址"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:id="@+id/register_iv_email_yes"
+                android:id="@+id/register_iv_phoneNumber_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -171,8 +127,45 @@
                 android:layout_marginLeft="6dp"
                 android:layout_weight="1"
                 android:background="#00000000"
-                android:hint="请输入密码6-10位"
                 android:inputType="textPassword"
+                android:hint="请输入密码6-10位"
+                android:textSize="16sp" />
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider_horizontal_line"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/icon_keyword2x" />
+
+            <EditText
+                android:id="@+id/register_et_major"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="请输入您的专业"
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>

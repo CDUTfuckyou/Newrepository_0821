@@ -1,8 +1,5 @@
 package com.example.book.activity;
 
-import com.example.book.callback.SizeCallBackForMenu;
-import com.example.book.ui.MenuHorizontalScrollView;
-
 import xmu.software.acbuwa.R;
 import android.app.ActivityGroup;
 import android.app.LocalActivityManager;
@@ -10,6 +7,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,9 +18,16 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.example.book.callback.SizeCallBackForMenu;
+import com.example.book.ui.MenuHorizontalScrollView;
 
 @SuppressWarnings("deprecation")
 public class StartActivity extends ActivityGroup implements OnClickListener {
+	
+	private String TAG = "StartAcitivty";
+	
 
 	private MenuHorizontalScrollView scrollView;
 	private LayoutInflater inflater;
@@ -28,7 +35,28 @@ public class StartActivity extends ActivityGroup implements OnClickListener {
 	private Button menuBtn;
 	private LinearLayout ll_menu;
 	private Intent intent;
-	private Button menu_btn_login, menu_btn_feed_back;
+	private Button menu_btn_login, menu_btn_feed_back;	
+	public static TextView topbar_text;
+	public static Button rightBtn;
+	//创建StartAcitivty的handler
+//	private Handler startActivityHandler = new Handler(){
+//
+//		@Override
+//		public void handleMessage(Message msg) {
+//			// TODO Auto-generated method stub
+//			super.handleMessage(msg);
+//			
+//			if(msg.what==1){
+//				//topbar_text.setText("首页");
+//				Log.d(TAG, msg.what+"");
+//				topbar_text.setText("我要买书");
+//			}
+//			else if(msg.what==2){
+//				Log.d(TAG, msg.what+"");
+//				//topbar_text.setText("流氓");
+//			}
+//		}					
+//	};
 
 	protected LocalActivityManager mLocalActivityManager;
 
@@ -42,7 +70,17 @@ public class StartActivity extends ActivityGroup implements OnClickListener {
 		setContentView(inflater.inflate(R.layout.menu_scroll_view, null));
 		
 		initView();
+
+	}	
 		
+	//封装handler，方便其他Activity调用
+//	public Handler returenHandler(){
+//		return startActivityHandler;
+//		
+//	}
+	
+	public TextView returnTopbar_text(){
+		return topbar_text;
 	}
 
 	private void initView() {
@@ -52,6 +90,8 @@ public class StartActivity extends ActivityGroup implements OnClickListener {
 		
 		mainPage = inflater.inflate(R.layout.acbuwa_page, null);
 		menuBtn = (Button) mainPage.findViewById(R.id.menuBtn);
+		topbar_text = (TextView) mainPage.findViewById(R.id.topbar_title);
+		rightBtn = (Button) mainPage.findViewById(R.id.rightBtn);
 		
 		FrameLayout container = (FrameLayout) mainPage.findViewById(R.id.Container);
 		container.removeAllViews();

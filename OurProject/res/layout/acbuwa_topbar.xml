@@ -11,6 +11,11 @@
     <TextView
         android:id="@+id/topbar_title"
         style="@style/topbar_text"
-        android:text="@string/acbuwa" />
+        android:text="首页" />
+    
+    <Button
+        android:id="@+id/rightBtn"
+        style="@style/topbar_right_btn"
+        android:background="@drawable/icon_email" />
 
 </RelativeLayout>

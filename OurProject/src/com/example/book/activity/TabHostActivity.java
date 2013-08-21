@@ -6,24 +6,26 @@ import android.app.TabActivity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.Window;
-import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-
-
-
 public class TabHostActivity extends TabActivity {
 	/** Called when the activity is first created. */ 
 	private TabHost tabHost; 
 	private TextView main_tab_new_message; 
-	private String[] ss = new String[]{"首页", "我要买书", "我要卖书", "设置"};
+	private String[] ss = new String[]{"首页", "我要买书", "我要卖书", "交易记录"};
 	private Intent intent; 
+	
+//	private Handler startActivityHandler;
+	
+//	private StartActivity startActivity;
+	
+	public static int topbar_rightBtn_tag=0;
 	
 	@Override 
 	public void onCreate(Bundle savedInstanceState) { 
@@ -54,38 +56,48 @@ public class TabHostActivity extends TabActivity {
 		spec=tabHost.newTabSpec(ss[3]).setIndicator(ss[3]).setContent(intent); 
 		tabHost.addTab(spec); 
 	
-
-		
 		RadioGroup radioGroup=(RadioGroup) this.findViewById(R.id.main_tab_group);
-		
-		
-		//radioGroup.check(a);
+
 		tabHost.setCurrentTab(0); 
 
 		
 		radioGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() { 
 			@Override 
 			public void onCheckedChanged(RadioGroup group, int checkedId) { 
-				// TODO Auto-generated method stub 
+				// TODO Auto-generated method stub
+				
+//				startActivity = new StartActivity();
+//				startActivityHandler = startActivity.returenHandler();
+				
 				switch (checkedId) { 
-					case R.id.main_tab_addMessage://最新新闻
+					case R.id.main_tab_addMessage:
 						tabHost.setCurrentTabByTag(ss[0]); 
+						//startActivityHandler.sendEmptyMessage(0);
+						StartActivity.topbar_text.setText("首页");
+						StartActivity.rightBtn.setBackgroundResource(R.drawable.icon_email);
+						topbar_rightBtn_tag=0;
 						break; 
-					case R.id.main_tab_myExam://我的信息
+					case R.id.main_tab_myExam:
+						StartActivity.topbar_text.setText("我要买书");
+						StartActivity.rightBtn.setBackgroundResource(R.drawable.icon_search);
 						tabHost.setCurrentTabByTag(ss[1]); 
+						topbar_rightBtn_tag=1;
 						break; 
-					case R.id.main_tab_message://我的通知 
+					case R.id.main_tab_message: 
+						StartActivity.topbar_text.setText("我要卖书");
 						tabHost.setCurrentTabByTag(ss[2]); 
 						break; 
-					case R.id.main_tab_settings://设置 
+					case R.id.main_tab_settings: 
+						StartActivity.topbar_text.setText("交易记录");
 						tabHost.setCurrentTabByTag(ss[3]); 
 						break; 
 					default: 
-					//tabHost.setCurrentTabByTag(""); 
+					
 					break; 
 				} 
 				
 			} 
 		}); 
-	} 		
+	}
+	
 }

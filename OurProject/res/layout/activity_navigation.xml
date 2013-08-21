@@ -61,7 +61,7 @@
 					style="@style/MMTabButton" 
 					android:layout_weight="1.0" 
 					android:drawableTop="@drawable/bg_checkbox_icon_menu_3" 
-					android:text="设置" /> 
+					android:text="交易记录" /> 
 			</RadioGroup> 
 			
 			<TextView 
